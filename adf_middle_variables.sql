@@ -7,7 +7,7 @@ SELECT '@{pipeline().DataFactory}' as DataFactory_Name,
 '@{pipeline().RunId}' as RunId,
 'TotalSaleTable' as Source1,
 'TotalSale CSV File' as Destination,
-'@{activity('Dataflow_test').output.runStatus.metrics.sink1.stages[0].bytesRead}' as RowsRead
+'@{activity('your_copyOrFlow_name').output.runStatus.metrics.sink1.stages[0].bytesRead}' as RowsRead
 
  
 -- FAILURE
